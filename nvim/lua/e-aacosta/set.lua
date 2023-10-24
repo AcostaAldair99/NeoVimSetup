@@ -1,7 +1,7 @@
 vim.opt.nu = true
 vim.opt.relativenumber = true
 vim.opt.encoding = "utf8"
-vim.opt.guifont = "HackNerdFont\11"
+--vim.opt.guifont = "HackNerdFont\11"
 
 vim.opt.tabstop = 4
 vim.opt.softtabstop = 4

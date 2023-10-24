@@ -12,14 +12,6 @@ return require('packer').startup(function(use)
         requires = { { 'nvim-lua/plenary.nvim' } }
     }
 
-    use({
-        'rose-pine/neovim',
-        as = 'rose-pine',
-        config = function()
-            vim.cmd('colorscheme rose-pine')
-        end
-    })
-
     use({ 'nvim-treesitter/nvim-treesitter', { run = ':TSUpdate' } })
     use('theprimeagen/harpoon')
     use('mbbill/undotree')
@@ -33,26 +25,6 @@ return require('packer').startup(function(use)
         end
     }
 
-    --use {
-    --  'VonHeikemen/lsp-zero.nvim',
-    --  branch = 'v2.x',
-    --requires = {
-    -- LSP Support
-    --  { 'neovim/nvim-lspconfig' }, -- Required
-    --{                            -- Optional
-    --   'williamboman/mason.nvim',
-    --  run = function()
-    --     pcall(vim.cmd, 'MasonUpdate')
-    -- end,
-    --    },
-    -- { 'williamboman/mason-lspconfig.nvim' }, -- Optional
-
-    -- Autocompletion
-    --{ 'hrsh7th/nvim-cmp' },     -- Required
-    --{ 'hrsh7th/cmp-nvim-lsp' }, -- Required
-    --{ 'L3MON4D3/LuaSnip' },     -- Required
-    -- }
-    --}
     use('vim-airline/vim-airline')
     use('vim-airline/vim-airline-themes')
     use({
@@ -61,11 +33,13 @@ return require('packer').startup(function(use)
     })
 
     use('ryanoasis/vim-devicons')
-    use('akinsho/toggleterm.nvim')
     use('preservim/nerdtree')
     use { 'neoclide/coc.nvim', branch = 'release' }
     
     use('neovim/nvim-lspconfig')
+
+   use {"akinsho/toggleterm.nvim", tag = '*'} 
+    use('rebelot/kanagawa.nvim') 
 
 end)
 

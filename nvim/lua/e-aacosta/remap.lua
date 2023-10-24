@@ -10,7 +10,7 @@ vim.keymap.set("n", "<C-x>", vim.cmd.bd)
 vim.keymap.set("n", "<C-q>", vim.cmd.qa)
 
 
-vim.keymap.set("n", "<leader>u","gcc")
 vim.keymap.set("n", "<C-o>", vim.cmd.NERDTreeToggle)
+vim.keymap.set("n", "<leader>u","gcc")
 -- vim.api.nvim_set_keymap('n', vim.g.--[[ m ]]apleader .. 'n', ':NERDTreeFocus<CR>', { noremap = true, silent = true })
 -- vim.api.nvim_set_keymap('n', '<C-o>', ':NERDTreeToggle<CR>', { noremap = true, silent = true })
